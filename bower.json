@@ -1,0 +1,9 @@
+{
+  "name": "spring-social-network-viewer",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.10.2"
+  },
+  "devDependencies": {}
+}
