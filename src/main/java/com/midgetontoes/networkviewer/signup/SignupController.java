@@ -12,9 +12,11 @@ import org.springframework.social.connect.web.ProviderSignInUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SignupController {
@@ -27,18 +29,20 @@ public class SignupController {
 	}
 
 	@RequestMapping(value="/signup", method=RequestMethod.GET)
-	public SignupForm signupForm(WebRequest request) {
+	public ModelAndView signupForm(WebRequest request) {
 		Connection<?> connection = ProviderSignInUtils.getConnection(request);
+        SignupForm signupForm = null;
 		if (connection != null) {
 			request.setAttribute("message", "Your " + StringUtils.capitalize(connection.getKey().getProviderId()) + " account is not associated with a Spring Social Showcase account. If you're new, please sign up.", WebRequest.SCOPE_REQUEST);
-			return SignupForm.fromProviderUser(connection.fetchUserProfile());
+            signupForm = SignupForm.fromProviderUser(connection.fetchUserProfile());
 		} else {
-			return new SignupForm();
+            signupForm = new SignupForm();
 		}
+        return new ModelAndView("signup", "signup", signupForm);
 	}
 
 	@RequestMapping(value="/signup", method=RequestMethod.POST)
-	public String signup(@Valid SignupForm form, BindingResult formBinding, WebRequest request) {
+	public String signup(@Valid @ModelAttribute("signup") SignupForm form, BindingResult formBinding, WebRequest request) {
 		if (formBinding.hasErrors()) {
 			return null;
 		}

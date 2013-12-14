@@ -53,6 +53,18 @@
     <orderEntry type="library" exported="" name="Gradle: jstl-impl-1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: hibernate-validator-4.1.0.Final" level="project" />
     <orderEntry type="library" exported="" name="Gradle: validation-api-1.0.0.GA" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-template-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-digester-2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-api-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-servlet-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-beanutils-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-request-jsp-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-core-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-autotag-core-runtime-1.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-request-servlet-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-el-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-jsp-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tiles-request-api-1.0.3" level="project" />
   </component>
 </module>
 

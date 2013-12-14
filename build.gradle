@@ -43,6 +43,11 @@ dependencies {
     providedCompile "javax.servlet.jsp:javax.servlet.jsp-api:$javaxJspApiVersion"
     compile "javax.servlet.jsp.jstl:jstl-api:$jstlVersion"
     compile "org.glassfish.web:jstl-impl:$jstlVersion"
+    compile "org.apache.tiles:tiles-jsp:$tilesVersion"
+    compile "org.apache.tiles:tiles-servlet:$tilesVersion"
+    compile "org.apache.tiles:tiles-template:$tilesVersion"
+    compile "org.apache.tiles:tiles-el:$tilesVersion"
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
