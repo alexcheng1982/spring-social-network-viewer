@@ -31,4 +31,8 @@ public class Account {
     public String getLastName() {
         return lastName;
     }
+
+    public String getDisplayName() {
+        return String.format("%s %s", firstName, lastName);
+    }
 }

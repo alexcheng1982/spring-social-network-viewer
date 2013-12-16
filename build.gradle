@@ -48,6 +48,13 @@ dependencies {
     compile "org.apache.tiles:tiles-template:$tilesVersion"
     compile "org.apache.tiles:tiles-el:$tilesVersion"
 
+    compile "org.neo4j:neo4j:$neo4jVersion"
+
+    compile "org.codehaus.jackson:jackson-core-asl:$jacksonVersion"
+    compile "org.codehaus.jackson:jackson-mapper-asl:$jacksonVersion"
+
+    compile "com.google.guava:guava:$guavaVersion"
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 

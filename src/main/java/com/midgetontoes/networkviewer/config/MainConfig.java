@@ -50,8 +50,6 @@ public class MainConfig {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
-    // internal helpers
-
     private DatabasePopulator databasePopulator() {
         ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
         populator.addScript(new ClassPathResource("JdbcUsersConnectionRepository.sql", JdbcUsersConnectionRepository.class));

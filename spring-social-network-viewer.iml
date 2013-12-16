@@ -65,6 +65,26 @@
     <orderEntry type="library" exported="" name="Gradle: tiles-el-3.0.3" level="project" />
     <orderEntry type="library" exported="" name="Gradle: tiles-jsp-3.0.3" level="project" />
     <orderEntry type="library" exported="" name="Gradle: tiles-request-api-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-cypher-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lucene-core-3.6.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-lucene-index-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: scala-library-2.10.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-kernel-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-cypher-compiler-1.9-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: concurrentlinkedhashmap-lru-1.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: geronimo-jta_1.1_spec-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-udc-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-cypher-commons-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: parboiled-scala_2.10-1.1.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-cypher-compiler-2.0-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-graph-algo-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-graph-matching-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: parboiled-core-1.1.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: neo4j-jmx-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-asl-1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-mapper-asl-1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: guava-15.0" level="project" />
   </component>
 </module>
 

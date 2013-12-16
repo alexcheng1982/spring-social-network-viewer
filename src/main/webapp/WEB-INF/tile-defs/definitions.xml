@@ -14,4 +14,8 @@
     <definition name="signup" extends="defaultTemplate">
         <put-attribute name="content" value="/WEB-INF/jsp/signup.jsp"/>
     </definition>
+
+    <definition name="connections" extends="defaultTemplate">
+        <put-attribute name="content" value="/WEB-INF/jsp/connections.jsp"/>
+    </definition>
 </tiles-definitions>

@@ -55,8 +55,6 @@ public class SignupController {
 		return null;
 	}
 
-	// internal helpers
-	
 	private Account createAccount(SignupForm form, BindingResult formBinding) {
 		try {
 			Account account = new Account(form.getUsername(), form.getPassword(), form.getFirstName(), form.getLastName());
