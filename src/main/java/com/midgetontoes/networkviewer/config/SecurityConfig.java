@@ -27,7 +27,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     @Inject
     private DataSource dataSource;
 
-    @Override
     protected void registerAuthentication(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
