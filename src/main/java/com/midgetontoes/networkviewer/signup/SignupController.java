@@ -33,7 +33,7 @@ public class SignupController {
 		Connection<?> connection = ProviderSignInUtils.getConnection(request);
         SignupForm signupForm = null;
 		if (connection != null) {
-			request.setAttribute("message", "Your " + StringUtils.capitalize(connection.getKey().getProviderId()) + " account is not associated with a Spring Social Showcase account. If you're new, please sign up.", WebRequest.SCOPE_REQUEST);
+			request.setAttribute("message", "Your " + StringUtils.capitalize(connection.getKey().getProviderId()) + " account is not associated with a Spring Social Network Viewer account. If you're new, please sign up.", WebRequest.SCOPE_REQUEST);
             signupForm = SignupForm.fromProviderUser(connection.fetchUserProfile());
 		} else {
             signupForm = new SignupForm();

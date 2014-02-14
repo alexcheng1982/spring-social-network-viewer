@@ -35,10 +35,6 @@ public class SocialConfig implements SocialConfigurer {
     @Inject
     private DataSource dataSource;
 
-    //
-    // SocialConfigurer implementation methods
-    //
-
     @Override
     public void addConnectionFactories(ConnectionFactoryConfigurer cfConfig, Environment env) {
         cfConfig.addConnectionFactory(new LinkedInConnectionFactory(env.getProperty("linkedin.consumerKey"), env.getProperty("linkedin.consumerSecret")));
