@@ -1,8 +1,14 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <div class="container">
 	<form:form commandName="signup" class="form-horizontal form-signup" role="form" action="signup" id="signup" method="POST">
 		<h2 class="form-signin-heading">Sign Up</h2>
+		<c:if test="${not empty message}">
+        	<div class="alert alert-info">
+        		<c:out value="${message}" />
+        	</div>
+        </c:if>
 		<spring:hasBindErrors name="signup">
 			<div class="alert alert-danger"><form:errors path="*" /></div>
 		</spring:hasBindErrors>

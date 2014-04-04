@@ -57,8 +57,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .authorizeRequests()
                 .antMatchers("/admin/**", "/favicon.ico", "/assets/**", "/auth/**", "/signin/**", "/signup/**").permitAll()
                 .antMatchers("/**").authenticated()
-                .and()
-                .rememberMe();
+                .and();
     }
 
     @Bean
